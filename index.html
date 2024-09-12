@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css\style.css">
+    <script src="js\script.js"></script>
+    <!-- <script src="./js/index.js"></script> -->
+</head>
+<body>
+    <header class="main-header">
+        <h1>WELOCOME TO SEGIJA WEB</h1>
+        <p>Hai Sobat Selamat Datang di SEGIJA WEB</p>
+        <p>SEGIJA WEB merupakan website yang dapat membantu kalian dalam perhitungan Luas dan Keliling Segitiga dan Jajargenjang</p>
+    </header>
+
+    <main>
+        <section class="selection-content">
+            <a href="#luassegitiga" type="button" class="selection-button button1">Luas Segitiga</a>
+            <a href="#kelilingsegitiga" type="button" class="selection-button button2">Keliling Segitiga</a>
+            <a href="#luasjajargenjang" type="button" class="selection-button button1">Luas Jajargenjang</a>
+            <a href="#kelilingjajargenjang" type="button" class="selection-button button2">Keliling Jajargenjang</a>
+        </section>
+    
+        <section class="main-content">
+            <header>
+                <h1 class="header-form-segitiga">S E G I T I G A</h1>
+            </header>
+    
+            <article class="luas-segitiga-content">
+                <div class="luas-segitiga-img"><img src="assets/segitiga.jpg"></div>
+                    <table>
+                        <tr>
+                            <td colspan="2" style="text-align: center;"> RUMUS SEGITIGA :</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">LUAS = <sup>1</sup>⁄<sub>2</sub> x ALAS x TINGGI</td>
+                            <td style="text-align: center;">KELILING = AB + BC + CA</td>
+                        </tr>
+                    </table>
+            </article>
+    
+            <hr />
+    
+            <form>
+                <header>
+                    <a class="segitiga-form-header" name="luassegitiga">HITUNG LUAS</a>
+                </header>
+    
+                <div class="container">
+                    <form>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="alas">PANJANG ALAS</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="number" id="alas" name="alassegitiga" placeholder="Masukkan panjang alas..">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="tinggi">PANJANG TINGGI</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="number" id="tinggi" name="tinggi" placeholder="Masukkan panjang tinggi..">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-15">
+                                <input type="number" id="resultluassegitiga" class="result" name="result" placeholder="0" disabled>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <input type="reset" value="Reset" onclick="reset()">
+                            <input type="button" value="Hitung" onclick="hitungluassegitiga()">
+                        </div>
+                    </form>
+                </div>
+            </form>
+
+            <form>
+                <header>
+                    <a class="segitiga-form-header" name="kelilingsegitiga">HITUNG KELILING</a>
+                </header>
+    
+                <div class="container">
+                    <form>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="alas">PANJANG SISI  (AB)</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="number" id="sisiab" name="sisiab" placeholder="Masukkan panjang sisi AB..">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="tinggi">PANJANG SISI  (BC)</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="number" id="sisibc" name="sisibc" placeholder="Masukkan panjang sisi BC..">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="tinggi">PANJANG SISI  (CA)</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="number" id="sisica" name="sisica" placeholder="Masukkan panjang sisi CA..">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-15">
+                                <input type="number" id="resulkelilingsegitiga" class="result" name="result" placeholder="0" disabled>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <input type="reset" value="Reset" onclick="reset()">
+                            <input type="button" value="Hitung" onclick="hitungkelilingsegitiga()">
+                        </div>
+                    </form>
+                </div>
+            </form>
+        </section>
+
+        <section class="main-content">
+            <header>
+                <h1 class="header-form-jajargenjang">J A J A R G E N J A N G</h1>
+            </header>
+    
+            <article class="jajargenjang-content">
+                <div class="jajargenjang-img"><img src="assets/jajargenjang.jpg"></div>
+                    <table>
+                        <tr>
+                            <td colspan="2" style="text-align: center;"> RUMUS JAJARGENJANG :</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">LUAS = ALAS x TINGGI</td>
+                            <td style="text-align: center;">KELILING = 2a + 2b </td>
+                        </tr>
+                    </table>
+            </article>
+    
+            <hr />
+    
+            <form>
+                <header>
+                    <a class="jajargenjang-form-header" name="luasjajargenjang">HITUNG LUAS</a>
+                </header>
+    
+                <div class="container">
+                    <form>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="alas">PANJANG ALAS</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="number" id="alasjajargenjang" name="alasjajargenjang" placeholder="Masukkan panjang alas..">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="tinggi">PANJANG TINGGI</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="number" id="tinggijajargenjang" name="tinggijajargenjang" placeholder="Masukkan panjang tinggi..">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-15">
+                                <input type="number" id="resultluasjajargenjang" class="result" name="result" placeholder="0" disabled>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <input type="reset" value="Reset" onclick="reset()">
+                            <input type="button" value="Hitung" onclick="hitungluasjajargenjang()">
+                        </div>
+                    </form>
+                </div>
+            </form>
+
+            <form>
+                <header>
+                    <a class="jajargenjang-form-header" name="kelilingjajargenjang">HITUNG KELILING</a>
+                </header>
+    
+                <div class="container">
+                    <form>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="nilaia">PANJANG SISI  (A)</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="number" id="nilaia-jajargenjang" name="nilaia-jajargenjang" placeholder="Masukkan panjang sisi A..">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="nilaib">PANJANG SISI  (B)</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="number" id="nilaib-jajargenjang" name="nilaib-jajargenjang" placeholder="Masukkan panjang sisi B..">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-15">
+                                <input type="number" id="resultkelilingjajargenjang" class="result" name="result" placeholder="0" disabled>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <input type="reset" value="Reset" onclick="reset()">
+                            <input type="button" value="Hitung" onclick="hitungkelilingjajargenjang()">
+                        </div>
+                    </form>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    
+</body>
+</html>
