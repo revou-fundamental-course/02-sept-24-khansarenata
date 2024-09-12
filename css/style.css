@@ -1,0 +1,216 @@
+.main-header{
+    text-align:center;
+}
+
+.selection-content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.selection-button {
+	background-color: #04AA6D;
+	height: 50px;
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+  }
+  
+  /* Button Pilihan Perhitungan */
+  .button1 {
+	background-color: rgb(197, 255, 195); 
+	color: black; 
+	border: 2px solid rgb(197, 255, 195);
+  }
+  
+  .button1:hover {
+	background-color: #04AA6D;
+	color: rgb(255, 255, 255);
+  }
+  
+  .button2 {
+	background-color: rgb(155, 184, 228); 
+	color: black; 
+	border: 2px solid rgb(155, 184, 228);
+  }
+  
+  .button2:hover {
+	background-color: #008CBA;
+	color: rgb(255, 255, 255);
+  }  
+
+  /* Tampilan Form Hitung */
+  * {
+	box-sizing: border-box;
+  }
+  
+  /* Inputan Nilai pada Form */
+  input[type=number]{
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+  }
+  
+  /* Label pada Form */
+  label {
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+  }
+
+  /* Memuat Form Perhitungan*/
+  .container {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+  }
+  
+  /* CSS Label Keterangan pada Form*/
+  .col-25 {
+	float: left;
+	width: 25%;
+	margin-top: 6px;
+	font-size: large;
+	font-weight: bold;
+	color: rgb(46, 46, 46);
+  }
+
+  /* Input Nilai pada Form*/
+  .col-75 {
+	float: left;
+	width: 75%;
+	margin-top: 6px;
+  }
+
+  /* Tampilan Hasil Hitung pada Form*/
+  .col-15 {
+	float: right;
+	width: 15%;
+	margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+	content: "";
+	display: table;
+	clear: both;
+  } 
+  
+  /* Button Hitung */
+  input[type=button] {
+	background-color: #04AA6D;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+  }
+
+  .result {
+	font-size: x-large;
+	font-weight: bold;
+  }
+
+  /* Button Reset */
+  input[type=reset] {
+	background-color: #71bd74;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: left;
+  } 
+
+  /* Tampilan Header pada Form */
+.header-form-segitiga{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0px;
+    background: rgb(129, 167, 141);
+    text-align: center;
+	font-size: x-large;
+	color: #000000;
+}
+
+.luas-segitiga-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.luas-segitiga-img{
+    margin-top: 20px;
+    height: 250px;
+    width: 250px;
+    /* border: 1px solid; */
+    background-size: cover;
+    background-position: center;
+    align-self: center;
+}
+
+.segitiga-form-header{
+	border-radius: 25px;
+	background-color: #abcaa3;
+	padding-top: 20px;
+    padding-bottom: 20px;
+	width: 300px;
+	text-align: center;
+	display: flex;
+    justify-content: center;
+	font-weight: bold;
+	font-size: larger;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+/* Tampilan Header pada Form */
+.header-form-jajargenjang{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0px;
+    background: rgb(29, 87, 47);
+    text-align: center;
+	font-size: x-large;
+	color: #f2f2f2;
+	margin-top: 30px;
+}
+
+.jajargenjang-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.jajargenjang-img{
+    margin-top: 20px;
+    height: 250px;
+    width: 250px;
+    /* border: 1px solid; */
+    background-size: cover;
+    background-position: center;
+    align-self: center;
+}
+
+.jajargenjang-form-header{
+	border-radius: 25px;
+	background-color: rgb(52, 118, 73);
+	padding-top: 20px;
+    padding-bottom: 20px;
+	width: 300px;
+	text-align: center;
+	display: flex;
+    justify-content: center;
+	color: #f2f2f2;
+	font-weight: bold;
+	font-size: larger;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
